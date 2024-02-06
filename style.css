@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Cabin:ital@1&family=Dancing+Script:wght@700&family=Heebo:wght@200;300;500&family=Merriweather:ital,wght@0,700;1,300&family=Mulish&family=Roboto&family=Rubik&family=Stoke&family=Ubuntu&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    font-family: 'Cabin', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 50px;
+}
+.icon, .address{
+    color: #777;
+    font-size: 22px;
+}
+.icon i{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.icon i:hover{
+    background-color: #ed8d2a;
+    color: white;
+}
+.address span{
+    padding: 12px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    background-color: rgb(21,21,21);
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.logo{
+    color: #FC6C85;
+    font-size: 30px;
+}
+.navbar li{
+    display: inline-block;
+    padding: 4px;
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 10px 8px;
+    color: #777;
+    font-size: 20px;
+}
+.navbar li a:hover,
+.address span:hover{
+    background-color: #FC6C85;
+    border-radius: 10px;
+    color: white;
+}
+.btn{
+    background-color: #ed8d2a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 27px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover{
+    letter-spacing: 1px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 13%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 33px;
+    color: #FC6C85;
+}
+.row{
+    background-image: linear-gradient(rgb(0 0 0/60%),rgb( 0 0 0/79%)),
+    url(img/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    height: 70vh;
+}
+.content h1{
+    font-size: 40px;
+    padding: 12px 0;
+}
+.content h1 span{
+    color: #FC6C85;
+}
+/* ______course-sec  */
+.sec{
+    padding: 3%;
+    text-align: center;
+}
+.course{
+    background-color: #FC6C85;
+    color: #fff;
+}
+.boxes{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.boxes h2{
+    color: black;
+    padding: 8px 0;
+}
+.box i{
+    font-size: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: #ed8d2a;
+    padding: 5%;
+}
+/* ______features-sec  */
+.heading{
+    padding: 10px 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.box1{
+    background-color: #fbe0cd;
+    margin: 12px;
+    padding: 20px 8px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.box1:hover{
+    transform: scaleY(1.2);
+    cursor: pointer;
+    background-color: #5a5354;
+    color: white;
+}
+.box1 i{
+    color: #ed8d2a;
+    font-size: 30px;
+    padding: 12px;
+}
+.btn2{
+    padding: 9px 18px;
+    background-color: #ed8d2a;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+.para_2{
+    font-size: 12px;
+    padding: 12px 0;
+}
+/* ________testimonial-sec  */
+.user_box{
+    padding: 2% 0;
+    text-align: left;
+}
+.user_box div{
+    margin-right: 8%;
+}
+.user_box h3{
+    padding: 8px 0;
+}
+.user_box img{
+    border-radius: 10px;
+    width: 50%;
+}
+.user_box i{
+    font-size: 20px;
+    padding: 8px;
+    background-color: #ed8d2a;
+    color: #fff;
+    margin-top: 6px;
+    border-radius: 50%;
+}
+.user_box i:hover{
+    background-color: #FC6C85;
+    color: black;
+    transform: rotateY(30deg);
+    cursor: pointer;
+}
+/* _______blog  */
+.blog{
+    background-color: #fbe0cd;
+}
+.blog_box{
+    flex-basis: 33%;
+    padding-top: 2%;
+}
+.blog_box h1{
+    font-size: 3rem;
+    color: #FC6C85;
+}
+.blog_box h2{
+    color: #777;
+    font-size: 2rem;
+}
+/* _______about  */
+.about{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.about img{
+    width: 50%;
+    border-radius: 10px;
+}
+.about div{
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 2%;
+}
+.about div p{
+    padding: 3% 0;
+    color: #777;
+}
+/* ______footer  */
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    background-color: #FC6C85;
+}
+.footer div{
+    flex-basis: 33%;
+    margin: 0 2%;
+}
+.footer div h1{
+    padding-bottom: 3%;
+    font-weight: 600;
+    font-size: 25px;
+}
+.footer div p{
+    color: white;
+}
+.f_list p{
+    padding: 4px 0;
+}
+.f_icon li{
+    padding: 0 3px;
+    font-size: 20px;
+}
+.f_para{
+    text-align: center;
+    background-color: #5a5354;
+    color: #fff;
+    padding: 4px 0;
+}
+/* ______fade-in animation  */
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* responsiveness  */
+@media only screen and (max-width:850px){
+    .boxes ,.about{
+        width: 90%;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer div {
+        margin: 0 5px;
+    }
+}
+@media only screen and (max-width:690px){
+    .burger{
+        display: block;
+    }
+    .navbar{
+        height: 400px;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: all 0.9s ease-out;
+        position: relative;
+        overflow: hidden;
+        padding: 2% 0;
+    }
+    .navbar li{
+        display: block;
+        padding: 4%;
+    }
+    .h-class{
+        height: 78px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .content{
+        width: 60%;
+    }
+    .boxes, .footer{
+        flex-direction: column;
+    }
+    .box1{
+        margin-top: 5%;
+    }
+    .about img{
+        width: 90%;
+    }
+    .footer div h1{
+        padding-bottom: 1%;
+    }
+    .footer div, .box{
+        padding-top: 5%;
+    }
+    .icon, .address {
+        font-size: 10px;
+    }
+    .address span{
+        padding: 5px;
+    }
+    .btn{
+        padding: 10px 12px;
+    }
+}
